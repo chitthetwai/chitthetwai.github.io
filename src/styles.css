@@ -2,22 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom utilities */
 @layer components {
   .frame-photo {
-    @apply bg-white p-2 shadow-lg;
+    @apply bg-white/5 p-2 shadow-2xl shadow-cyan-950/40;
   }
 }
 
 html, body { height: 100%; }
-body { @apply antialiased text-gray-800 bg-gray-100 font-sans; }
-
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body { @apply bg-gray-900 text-gray-100; }
+body {
+  @apply antialiased font-sans text-slate-100;
+  background-color: #020617;
 }
 
-/* Decorative scribble as a small utility */
-.scribble {
-  width: 120px; height: 40px; background: transparent; display:block;
+body[data-theme="light"] {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+body[data-theme="light"] .bg-slate-950,
+body[data-theme="light"] .bg-slate-900,
+body[data-theme="light"] .bg-white\/5,
+body[data-theme="light"] .bg-slate-900\/70 {
+  background-color: #ffffff !important;
+}
+
+body[data-theme="light"] .text-slate-100,
+body[data-theme="light"] .text-slate-300,
+body[data-theme="light"] .text-slate-400,
+body[data-theme="light"] .text-slate-900 {
+  color: #334155 !important;
+}
+
+body[data-theme="light"] .border-white\/10,
+body[data-theme="light"] .border-white\/15,
+body[data-theme="light"] .border-cyan-400\/20,
+body[data-theme="light"] .border-white\/20 {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+body[data-theme="light"] .shadow-black\/20,
+body[data-theme="light"] .shadow-cyan-950\/40 {
+  box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08) !important;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.35);
+  color: white;
 }

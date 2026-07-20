@@ -3,107 +3,301 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — Your Name</title>
-    <meta name="description" content="Personal portfolio" />
+    <title>Chit Thet Wai | Database Administrator</title>
+    <meta name="description" content="Database Administrator with 6+ years of experience in MSSQL, MySQL, PostgreSQL, Oracle, MongoDB, cloud migration, ETL, and BI." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/styles.css">
   </head>
-  <body class="min-h-screen flex items-center">
-    <header class="w-full absolute top-0 left-0 px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">R</div>
-        <span class="hidden sm:inline">Chit Thet Wa</span>
+  <body class="min-h-screen bg-slate-950 text-slate-100 transition-colors duration-300" data-theme="dark">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.18),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(250,204,21,0.16),_transparent_30%)]"></div>
+
+    <header class="sticky top-0 z-20 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#home" class="text-lg font-semibold tracking-wide">Chit Thet Wa</a>
+        <div class="flex items-center gap-3">
+          <nav class="hidden gap-6 text-sm text-slate-300 md:flex">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#experience" class="hover:text-white">Experience</a>
+          <a href="#skills" class="hover:text-white">Skills</a>
+          <a href="#projects" class="hover:text-white">Projects</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </nav>
+          <button id="themeToggle" class="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/20" aria-label="Toggle theme">☀︎</button>
+          <button id="menuBtn" class="rounded border border-white/20 px-3 py-2 text-sm md:hidden" aria-label="Toggle menu">☰</button>
+        </div>
       </div>
-      <nav class="hidden md:flex gap-6 text-gray-600">
-        <a href="#" class="hover:text-black">Home</a>
-        <a href="#about" class="hover:text-black">About</a>
-        <a href="#projects" class="hover:text-black">Projects</a>
-      </nav>
-      <div class="md:hidden">
-        <button id="menuBtn" aria-label="Open menu">☰</button>
+      <div id="mobileNav" class="hidden border-t border-white/10 bg-slate-950/95 px-6 py-4 md:hidden">
+        <div class="flex flex-col gap-3 text-sm text-slate-300">
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#experience" class="hover:text-white">Experience</a>
+          <a href="#skills" class="hover:text-white">Skills</a>
+          <a href="#projects" class="hover:text-white">Projects</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </div>
       </div>
     </header>
 
-    <main class="container mx-auto px-6 py-24">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <section>
-          <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Chit Thet Wa</h1>
-          <p class="text-lg md:text-xl text-gray-700 mb-6 leading-relaxed max-w-xl">
-            <span class="inline-block bg-amber-100 text-amber-800 px-2 py-1 rounded mr-3 font-semibold">Frontend Developer</span>
-            with knowledge in web development and design, I deliver polished projects and clear user experiences.
+    <main id="home" class="mx-auto max-w-6xl px-6 py-16 lg:py-24">
+      <section class="grid items-center gap-12 rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-2xl shadow-black/20 lg:grid-cols-[1.1fr_0.9fr] lg:p-12">
+        <div>
+          <p class="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-sm font-medium text-cyan-300">Database Administrator • Data Engineer • BI Enthusiast</p>
+          <h1 class="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Chit Thet Wa</h1>
+          <p class="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
+            Database Administrator with over 6 years of hands-on experience managing multi-platform environments including MSSQL, MySQL, PostgreSQL, Oracle, and MongoDB.
           </p>
-          <div class="flex gap-4 items-center">
-            <a href="#contact" class="inline-block bg-black text-white px-6 py-3 rounded">Contact Me</a>
-            <a href="#projects" class="text-sm text-gray-600">See Projects</a>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="rounded bg-cyan-500 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400">Let’s Connect</a>
+            <a href="Chit Thet Wa_DE_20260710.pdf" class="rounded border border-white/15 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-300">Download CV</a>
           </div>
-        </section>
-
-        <section class="flex justify-center md:justify-end">
-          <div class="relative">
-            <div class="absolute -right-6 -bottom-6 w-full h-full border-4 border-black transform rotate-0"></div>
-            <div class="frame-photo relative z-10 overflow-hidden">
-              <img src="./assets/chitthetwai.jpg" alt="Your Photo" class="w-64 md:w-96 lg:w-[380px] object-cover block rounded-sm">
-            </div>
-            <div class="absolute -right-12 -top-6">
-              <div class="w-6 h-6 bg-amber-500 rotate-12 border-2 border-black"></div>
-            </div>
+          <div class="mt-8 flex flex-wrap gap-3 text-sm text-slate-300">
+            <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2">+95 9428148799</span>
+            <span class="rounded-full border border-white/10 bg-white/5 px-3 py-2">chitthetwai92@gmail.com</span>
+            <a href="https://www.linkedin.com/in/chit-thet-wai-4763b3170" target="_blank" rel="noreferrer" class="rounded-full border border-white/10 bg-white/5 px-3 py-2 hover:text-cyan-300">LinkedIn</a>
           </div>
-        </section>
-      </div>
+        </div>
 
-      <section id="about" class="mt-20">
-        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-        <p class="text-gray-700">See <a href="Chit Thet Wa_DE_20260710.pdf" class="text-brand underline">my CV (PDF)</a> for details. I build accessible, responsive web apps and focus on visual polish.</p>
-      </section>
-
-      <section id="projects" class="mt-12">
-        <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-        <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <!-- Projects will be loaded dynamically -->
+        <div class="relative mx-auto w-full max-w-md">
+          <div class="absolute -right-4 -bottom-4 h-full w-full rounded-3xl border-4 border-cyan-400/60"></div>
+          <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900 p-2 shadow-2xl shadow-cyan-950/40">
+            <img src="./assets/chitthetwai.jpg" alt="Chit Thet Wa" class="h-[420px] w-full object-cover rounded-[1.1rem]">
+          </div>
+          <div class="absolute -left-4 top-8 rounded-full border border-cyan-400/40 bg-cyan-500/20 px-3 py-2 text-sm text-cyan-200">Available for DBA / Data roles</div>
         </div>
       </section>
 
-      <section id="contact" class="mt-12">
-        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-        <form class="max-w-md grid gap-3">
-          <input class="p-3 border rounded" placeholder="Your email">
-          <textarea class="p-3 border rounded" placeholder="Message"></textarea>
-          <button class="bg-black text-white px-4 py-2 rounded">Send</button>
-        </form>
+      <section id="about" class="mt-20 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl shadow-black/20 backdrop-blur">
+        <div class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">About Me</p>
+            <h2 class="mt-3 text-3xl font-semibold">Professional profile</h2>
+            <p class="mt-4 text-lg leading-8 text-slate-300">
+              I bring deep experience in database administration, performance tuning, backup and recovery, high availability, cloud migration and data engineering. Recently, I designed and implemented an end-to-end data pipeline using MSSQL, PySpark, and MySQL to automate ETL tasks and support reporting.
+            </p>
+            <p class="mt-4 text-lg leading-8 text-slate-300">
+              I also completed Power BI training and delivered reporting projects that connect strong DBA fundamentals with business intelligence and data-driven decision making.
+            </p>
+          </div>
+          <div class="rounded-2xl border border-cyan-400/20 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold">Core strengths</h3>
+            <ul class="mt-4 space-y-2 text-slate-300">
+              <li>• High availability, replication, log shipping</li>
+              <li>• Backup & recovery and DR readiness</li>
+              <li>• Performance tuning and indexing</li>
+              <li>• Cloud migration and monitoring</li>
+              <li>• ETL, data pipeline, and BI support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="mt-20">
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Experience</p>
+            <h2 class="mt-2 text-3xl font-semibold">Career journey</h2>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold">Database Administrator (Team Lead)</h3>
+                <p class="text-cyan-300">A Bank Head Office Yangon</p>
+              </div>
+              <span class="text-sm text-slate-400">09/2025 – Present</span>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-300">
+              <li>Leading DBA team for MSSQL, MySQL, PostgreSQL, and Oracle environments.</li>
+              <li>Managing backup, recovery, log shipping, replication, and banking deployment rollouts.</li>
+              <li>Built an end-to-end MSSQL → PySpark → MySQL data pipeline to support automation and reporting.</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold">Senior Database Administrator</h3>
+                <p class="text-cyan-300">A Bank Head Office Yangon</p>
+              </div>
+              <span class="text-sm text-slate-400">06/2024 – 09/2025</span>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-300">
+              <li>Migrated PostgreSQL databases from AWS to Huawei Cloud with minimal downtime.</li>
+              <li>Designed Zabbix and Huawei Cloud monitoring for improved reliability and visibility.</li>
+              <li>Implemented backup schedules, partitioning, role management, replication and alerts.</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold">Database Administrator</h3>
+                <p class="text-cyan-300">Partner Associates International</p>
+              </div>
+              <span class="text-sm text-slate-400">07/2021 – 06/2024</span>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-300">
+              <li>Managed DB lifecycle, capacity planning, backup/recovery, and performance tuning.</li>
+              <li>Developed SSIS ETL pipelines for migration and data integration workflows.</li>
+              <li>Worked with MySQL, MongoDB, and database design standards for quality and consistency.</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <h3 class="text-xl font-semibold">System Support Engineer</h3>
+                <p class="text-cyan-300">Partner Associates International</p>
+              </div>
+              <span class="text-sm text-slate-400">07/2017 – 07/2021</span>
+            </div>
+            <ul class="mt-4 list-disc space-y-2 pl-5 text-slate-300">
+              <li>Supported MAPPS systems and monitored data center operations with Nagios and PRTG.</li>
+              <li>Handled deployments, incident management, and first-line support across critical infrastructure.</li>
+              <li>Worked closely with developers and operations teams on system maintenance and releases.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="mt-20">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Skills</p>
+          <h2 class="mt-2 text-3xl font-semibold">Technical stack</h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold">Database platforms</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">MSSQL</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">MySQL</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">PostgreSQL</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">Oracle</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">MongoDB</span>
+            </div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+            <h3 class="text-lg font-semibold">Operations & engineering</h3>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">High Availability</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">Replication</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">Backup & Recovery</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">Monitoring</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">ETL / Data Pipelines</span>
+              <span class="rounded-full border border-cyan-400/25 bg-cyan-400/10 px-3 py-2 text-sm">Power BI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="mt-20">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Projects</p>
+          <h2 class="mt-2 text-3xl font-semibold">Key systems and initiatives</h2>
+        </div>
+        <div id="projectsGrid" class="grid gap-6 md:grid-cols-2"></div>
+      </section>
+
+      <section class="mt-20 rounded-3xl border border-white/10 bg-gradient-to-r from-cyan-500/10 to-amber-500/10 p-8">
+        <div class="mb-8">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Certifications</p>
+          <h2 class="mt-2 text-3xl font-semibold">Credentials</h2>
+        </div>
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">RHCSA Certified</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">MCSA Certified</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">MIT 98-364 (Database Administration Fundamental)</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">iBanking / mBanking</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">Core Banking Administration</div>
+          <div class="rounded-2xl border border-white/10 bg-slate-950/70 p-4">AML (Anti-Money Laundering)</div>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-20 rounded-3xl border border-white/10 bg-slate-900/70 p-8">
+        <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">Contact</p>
+            <h2 class="mt-2 text-3xl font-semibold">Let’s discuss data reliability, automation, or migration projects</h2>
+            <p class="mt-4 text-slate-300">I’m open to DBA, data engineering and BI roles where I can bring strong operations and delivery focus.</p>
+            <div class="mt-6 space-y-2 text-slate-300">
+              <p>Phone: +95 9428148799 (Viber / WhatsApp)</p>
+              <p>Email: <a href="mailto:chitthetwai92@gmail.com" class="text-cyan-300">chitthetwai92@gmail.com</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/chit-thet-wai-4763b3170" target="_blank" rel="noreferrer" class="text-cyan-300">linkedin.com/in/chit-thet-wai</a></p>
+            </div>
+          </div>
+          <form id="contactForm" class="grid gap-3">
+            <input id="email" name="email" type="email" required class="rounded border border-white/10 bg-slate-950 px-4 py-3 text-slate-100 outline-none ring-0" placeholder="Your email" />
+            <textarea id="message" name="message" required class="min-h-[120px] rounded border border-white/10 bg-slate-950 px-4 py-3 text-slate-100 outline-none ring-0" placeholder="Message"></textarea>
+            <button type="submit" class="rounded bg-cyan-500 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400">Send Message</button>
+            <p id="formStatus" class="text-sm text-cyan-300"></p>
+          </form>
+        </div>
       </section>
     </main>
 
     <script>
-      // Mobile menu toggle (simple)
       const menuBtn = document.getElementById('menuBtn');
-      menuBtn?.addEventListener('click', () => {
-        const nav = document.querySelector('header nav');
-        if (!nav) return;
-        nav.classList.toggle('hidden');
+      const mobileNav = document.getElementById('mobileNav');
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      applyTheme(savedTheme);
+
+      function applyTheme(theme) {
+        const isDark = theme === 'dark';
+        body.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        if (themeToggle) {
+          themeToggle.textContent = isDark ? '☀︎' : '☾';
+        }
+        localStorage.setItem('theme', theme);
+      }
+
+      themeToggle?.addEventListener('click', () => {
+        const nextTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
       });
 
-      // Load projects from JSON
-      async function loadProjects(){
-        try{
+      menuBtn?.addEventListener('click', () => {
+        mobileNav?.classList.toggle('hidden');
+      });
+
+      const form = document.getElementById('contactForm');
+      const formStatus = document.getElementById('formStatus');
+      form?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+        if (!email || !message) {
+          formStatus.textContent = 'Please provide both your email and message.';
+          return;
+        }
+        const subject = encodeURIComponent('Portfolio enquiry');
+        const body = encodeURIComponent(`Email: ${email}\n\n${message}`);
+        window.location.href = `mailto:chitthetwai92@gmail.com?subject=${subject}&body=${body}`;
+        formStatus.textContent = 'Opening your mail app…';
+        form.reset();
+      });
+
+      async function loadProjects() {
+        try {
           const res = await fetch('./assets/projects.json');
           const list = await res.json();
           const grid = document.getElementById('projectsGrid');
-          list.forEach(p=>{
+          list.forEach((p) => {
             const card = document.createElement('article');
-            card.className = 'p-4 bg-white shadow rounded flex flex-col';
+            card.className = 'rounded-2xl border border-white/10 bg-slate-900/70 p-6';
             card.innerHTML = `
-              <h3 class="font-semibold text-lg mb-2">${p.title}</h3>
-              <p class="text-sm text-gray-600 flex-1">${p.description}</p>
-              <div class="mt-3 flex gap-2">
-                ${p.live?`<a href="${p.live}" class="text-sm text-brand underline">Live</a>`:''}
-                ${p.repo?`<a href="${p.repo}" class="text-sm text-gray-600 underline">Code</a>`:''}
+              <h3 class="text-xl font-semibold">${p.title}</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-300">${p.description}</p>
+              <div class="mt-4 flex gap-3 text-sm text-cyan-300">
+                ${p.live ? `<a href="${p.live}" class="hover:text-cyan-200">Live</a>` : ''}
+                ${p.repo ? `<a href="${p.repo}" class="hover:text-cyan-200">Code</a>` : ''}
               </div>
             `;
             grid.appendChild(card);
-          })
-        }catch(e){
+          });
+        } catch (e) {
           console.warn('Failed to load projects', e);
         }
       }

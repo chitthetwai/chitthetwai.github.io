@@ -1,13 +1,31 @@
 [
   {
-    "title": "Portfolio Website",
-    "description": "This portfolio site built with Tailwind CSS and plain HTML/JS.",
+    "title": "OWIC",
+    "description": "Oversea Worker Identification Card system support and data operations experience in border-management environments.",
     "live": "",
     "repo": ""
   },
   {
-    "title": "Example App",
-    "description": "A demo app showcasing responsive UI and accessibility.",
+    "title": "CI",
+    "description": "Certificate of Identity related deployments and operational support with secure, reliable data handling.",
+    "live": "",
+    "repo": ""
+  },
+  {
+    "title": "iBMC",
+    "description": "Integrated Border Management System experience covering system support, deployment, and environment monitoring.",
+    "live": "",
+    "repo": ""
+  },
+  {
+    "title": "SSB",
+    "description": "Social Security Board project exposure with database operations, support and rollout coordination.",
+    "live": "",
+    "repo": ""
+  },
+  {
+    "title": "MSSQL → PySpark → MySQL ETL Pipeline",
+    "description": "Designed and implemented a modern data pipeline for extracting, transforming and loading curated data for reporting and analytics.",
     "live": "",
     "repo": ""
   }
