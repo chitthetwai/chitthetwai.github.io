@@ -1,0 +1,12 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles.css -o ./assets/styles.css --minify",
+    "dev:css": "tailwindcss -i ./src/styles.css -o ./assets/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.5.0"
+  }
+}
