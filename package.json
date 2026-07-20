@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:css": "npx tailwindcss@3.4.17 -i ./src/styles.css -o ./assets/styles.css --minify",
-    "dev:css": "npx tailwindcss@3.4.17 -i ./src/styles.css -o ./assets/styles.css --watch"
+    "build:css": "tailwindcss -i ./src/styles.css -o ./assets/styles.css --minify",
+    "dev:css": "tailwindcss -i ./src/styles.css -o ./assets/styles.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"
