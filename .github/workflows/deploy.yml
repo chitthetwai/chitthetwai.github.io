@@ -19,7 +19,7 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Build CSS
-        run: npm run build:css
+        run: npx tailwindcss@3.4.17 -i ./src/styles.css -o ./assets/styles.css --minify
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
